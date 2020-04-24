@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{padding:30px;}
+        h1{
+        font-size:40px;
+        }
+        h2{
+        font-size:35px;
+        }
+        h3{
+        font-size:30px
+        }
+        h4{
+        font-size:25px;
+        }
+        p1{
+        padding: 20px;
+        font-size:20px;
+        font-style:bold;
+        }
+        .shortcut{
+        text-decoration:none;
+        }
+        table,th,td{
+        border: 5px black;
+        }
+        p2{
+        padding:20px
+        font-size: 12px;
+        }
+        button{
+        font-size:20px;
+        }
+    </style>
+<body>
+    <h1 align="right">Software Requirements</h1>
+    <h1 align="right">Specifications</h1>
+    <br>
+    <br>
+    <h2 align="right">for</h2>
+    <h1 align="right">PC Builder</h1>
+    <br>
+    <br>
+    <h2 align="right">Version 1.0</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 align="right">Prepared by</h3>
+    <h3 align="right">Team PC Builder</h3>
+    <br>
+    <br>
+    <table width="100%">
+        <th>Name</th>
+        <th>ID</th>
+        <th>E-mail</th>
+        <tr><td>Syed Faiyaz Kabir</td>
+            <td>1812606042</td>
+            <td>Faiyazkabir50@gmail.com</td>
+        </tr>
+        <tr>
+            <td>T.M Ishrak Hussain</td>
+            <td>1811820042</td>
+            <td>ishrakhussain30@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Nobin Bokhtiar</td>>
+            <td>1812476042</td>
+            <td>nobin.bokhtiar@gmail.com</td>
+        </tr>
+    </table>
+    <h4 align="right">
+        Instructor : Nabeel Mohammed
+    </h4>
+    <h4 align="right">
+        Course : CSE 327
+    </h4>
+
+    <h4 align="right">
+        Date : 4/2/2020
+    </h4>
+
+   <a href="SRS-template-Version_1.docx" download> <button type="button">Print</button></a>
+
+
+
+    <h3>
+        Contents
+    </h3>
+
+    <a class="shortcut" href="#intro"><h4>
+    1 &emsp;Introduction
+    </h4>
+    </a>
+
+    <br>
+
+    <a class="shortcut" href="#DCP"><p1>
+    1.1 &emsp;Document Purpose
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#PDC"><p1>
+    1.2 &emsp;Product Scope
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#IAD"><p1>
+    1.3 &emsp; Intended Audience and Document Overview;
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#DAA"><p1>
+        1.4 &emsp; Definitions,Acronyms and Document Overview
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#DCN">
+        <p1>
+            1.5 &emsp;Document Conventions
+        </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#RA"><p1>
+     1.6 &emsp;References and Acknowledgments
+    </p1>
+    </a>
+    <h4>2 &emsp;Overall Description</h4>
+    <a class="shortcut" href="#PO"><p1>
+    2.1 &emsp;Product Overview
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#PFN"><p1>
+    2.2 &emsp;Product Functionality
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#DIC"><p1>
+    2.3 &emsp;Design and Implementation Constraints
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#AD"><p1>
+    2.4 &emsp;Assumptions and Dependencies
+    </p1>
+    </a>
+    <h4>3 &emsp;Specific Requirements</h4>
+    <a class="shortcut" href="#EIR"><p1>
+        3.1 &emsp;External Interface Requirements
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#FR"><p1>
+        3.2 &emsp;Functional Requirements
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#UCM"><p1>
+    3.3 &emsp;Use Case Model
+    </p1>
+    </a>
+    <h4>4 &emsp;Other Non-Functional Requirements</h4>
+    <a class="shortcut" href="#PR"><p1>
+    4.1 &emsp;Performance Requirements
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#SSR"><p1>
+    4.2 &emsp;Safety and Security Requirements
+    </p1>
+    </a>
+    <br>
+    <br>
+    <a class="shortcut" href="#SQA"><p1>
+    4.3 &emsp;Software Quality Attributes
+    </p1>
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 id="intro">Introduction</h3>
+    <p2>
+        The Software Requirements Specification (SRS) is designed for describing the agreement between the customer and the developer about the specifications of the software product, which is requested. It is the formal and official document. It gives a clear description of the user requirements. It also describes what the software will do and how it will perform.
+    The SRS aims to describe the functional and non-functional requirements, external interfaces, design constrains, attributes etc. It doesn’t aim to work out how the software will work. It just describes is what the users want the software to do.
+    </p2>
+    <h4 id="#DCP">
+        1.1 &emsp;Document Purpose
+    </h4>
+    <p2>
+        The purpose of the Software Requirements Specification (SRS) is to describe and specify the functions of the “PC Builder.” It will describe the features, interfaces of the system, what the system will do and the constraints under which it must operate. This SRS gives a clear view to the primary uses and required functionalities wanted by the client.
+        This document is proposed to our primary “PC Builder” customer: Dr. Nabeel Mohammed for the approval.
+    </p2>
+
+    <h4 id="PDC">
+    1.2 &emsp;Product Scope
+    </h4>
+    <p2>
+        The software system being produced is called “ PC Builder.” It is being produced for the users who want to build a PC within a minimum budget. This software will help them to setup their PC by choosing the parts of the PC automatically, as well as they also can choose the parts of their own. So, the system can be useful for both non-technical and technical users.
+        This system is largely cross -platform and is available to anyone using the website or the android application. The system will be run on a central server. There will be two different user interfaces. One is for the android app users and the other one is for the web browsers.
+    </p2>
+    <h4 id="IAD">
+        1.3 &emsp;Intended Audience and Document Overview
+    </h4>
+    <p2>
+        This document is intended for the design team who will involve the developers with the requirement of the project. This documentation will be containing each and every detail of the project i.e. the frameworks, the platforms etc.
+    </p2>
+    <h4 id="DAA">
+        1.4 &emsp;Definitions,Acronyms and Abbreviations
+    </h4>
+    <table width="100%">
+        <tr>
+            <td>
+            SRS
+        </td>
+            <td>Software Requirement Specification</td>
+        </tr>
+        <tr>
+            <td>
+                API
+            </td>
+            <td>
+                Application program interface
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Voice Recognition
+            </td>
+            <td>
+                A computer software program with the ability to decode human voice
+            </td>
+        </tr>
+    </table>
+    <h4 id="DCN">
+        1.5 &emsp;Document Conventions
+    </h4>
+    <p2>
+        This document follows the IEEE formatting requirements. Arial font, size 12 has been used throughout the document for text. The space between two texts is single spaced. Also, italics has been used for the comments and references in the SRS.
+    </p2>
+    <h4 id="RA">
+        1.6 &emsp;References and Acknowledgments
+    </h4>
+
+    <ul>
+        <li>
+            Bandakkanavar, Ravi.[July 4,2018]. Software Requirements Specification document with example. [online] Available at: ‘’https://krazytech.com/projects/sample-software-requirements-specificationsrs-report-airline-database'’ [Accessed 2 Feb. 2020].
+        </li>
+        <br>
+        <li>
+            Donn Le Vie, Jr.[Date n.d.]. Writing Software Requirements Specifications. [online] Available at: “https://https://en.calameo.com/read/0050322708928e706e092” [Accessed 2 Feb. 2020].
+        </li>
+        <br>
+        <li>
+            Wiegers, Karl E.[2002].Software Requirements Specification for TimeTracker 2.0. [online] Available at: “https://trello.com/c/39YU00db/12-completed-srs-example" [Accessed 2 Feb. 2020].
+        </li>
+        <br>
+
+    </ul>
+
+<h4 id="PO">
+    2.1 &emsp;Product Overview
+</h4>
+<p2>
+    This system is designed to help non-technical people to gather information regarding what parts to buy in order to build their desired PC within their budget. The user can provide in what environment the computer will be used for(home, work or gaming), in what budget and the software will generate a build for them. The result will be a suitable for the provided environment.
+</p2>
+<h4 id="PFN">
+    2.2 &emsp;Product Functionality
+</h4>
+    <p2>The functionalities of the software is given below:
+    </p2>
+    <br>
+
+<ul>
+    <li>
+        User sign up using email and gives a password.
+    </li>
+    <li>
+        User login using the email and password that was used while signing up.
+    </li>
+    <li>
+        User provides what type of environment e.g. Home, Work or Gaming PC will be used for by clicking on the options or via voice command.
+    </li>
+    <li>
+        User provides the budget of the PC via typing or voice command.
+    </li>
+    <li>
+        The software generates a build by using the user inputs either through voice command or options.
+    </li>
+    <li>
+        The parts of the build are imported from the database.
+    </li>
+</ul>
+<h4 id="DIC">
+    2.3 &emsp;Design and Implementation Constraints
+</h4>
+    <p2>A list of constraints are given below:</p2>
+<ul>
+    <li>
+        The user not having a microphone might abstain him from giving voice commands.
+    </li>
+    <li>
+        The microphone will not record until the user presses the “mic button” due to privacy concerns.
+    </li>
+    <li>
+        The software will not make any valid result for any invalid inputs through voice command.
+    </li>
+
+</ul>
+<h4 id="AD">
+    2.4 &emsp;Assumption and Dependencies
+</h4>
+<p2>
+    The software uses third party API e.g. Dialogflow or android.speech for voice recognition
+</p2>
+<h3 id="EiR">
+   3.1 &emsp;External Interface Requirements
+</h3>
+<h4>
+    3.11 User interfaces
+</h4>
+<p2>
+
+</p2>
+<h4>Android app and Web Dashboard</h4>
+    <p2>
+        User will be able to sign up using email and password which then can be used for logging into the application. Then there will be a home screen showing what type of environment the user wants to use their PC. The user can select one of the options by clicking or via voice command. Then the next window will ask for the user’s budget which can be given via typing or voice command. The next window will show the result for the user about which parts will come under the given inputs.
+    </p2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4 id="Budget">Browser budget screen</h4>
+<img src="DesktopBudget.PNG">
+    <h4 id="BudgetError">Browser invalid budget</h4>
+    <img src="DesktopErrorBudget.PNG">
+    <h4 id="HomeError">Browser Invalid voice command</h4>
+    <img src="DesktopErrorHomeScreen.PNG">
+    <h4 id="Login">Browser Login</h4>
+<img src="DesktopLogin.PNG">
+    <h4 id="Result">Browser results</h4>
+<img src="DesktopResultViewer.PNG">
+    <h4 id="Signup">Browser Sign-up</h4>
+<img src="DesktopSignup.PNG">
+    <h4 id="SignupError">Browser Sign-up Error</h4>
+<img src="DesktopSignupError.PNG">
+<h4 id="Home">Browser Home Menu</h4>
+<img src="HomeScreenDesktop.PNG">
+    <h4 id="LoginError">Browser log in error</h4>
+    <img src="LoginErrorDesktop.PNG">
+    <h4>App Home Menu</h4>
+    <img src="HomeScreenMobile.PNG">
+<h4>App Budget Menu</h4>
+<img src="MobileBudget.PNG">
+<h4>App Budget Error Menu</h4>
+<img src="MobileErrorBudgetScreen.PNG">
+<h4>App Invalid voice command</h4>
+<img src="MobileErrorHomeScreen.PNG">
+<h4>App Login Error</h4>
+<img src="MobileErrorLogin.PNG">
+<h4>App Login</h4>
+<img src="MobileLogin.PNG">
+<h4>App results</h4>
+<img src="MobileResultViewer.PNG">
+<h4>App Sign-up Error</h4>
+<img src="mobilesignupError.PNG">
+<h4>App Sign-up</h4>
+<img src="SignupMobile.PNG">
+
+
+<h4>Hardware Interfaces</h4>
+    <p1>Android Phone :</p1>
+    <br>
+    <p2>Phone Mic to enter voice command</p2>
+    <br>
+    <p1>Web browser:</p1>
+    <br>
+    <p2>Microphone to enter voice command</p2>
+<h4>Software Interfaces</h4>
+<p2>
+Android’s native development kit will be used for application development. Third party API will be used for browser voice recognition. SQL database or an excel sheet will be used for fetching data to obtain results.
+</p2>
+
+<h4>3.2 &emsp;Functional Requirements</h4>
+<ul>
+    <li>
+        Sign Up: The user must provide a valid email address that has not been used to sign up before. If the user provides an invalid email address an error message will be shown prompting them to provide a valid email address and password.
+    </li>
+    <li>
+        Login: The user must provide valid credentials in order to login into his account. Invalid email address or password will cause an error message to be shown.
+    </li>
+    <li>
+        Voice Command: The user should input proper voice command in order to get a valid and accurate result. An invalid voice command will result in wrong output or an error message to be shown.
+    </li>
+</ul>
+    <h4>3.3 &emsp;Use Case Model</h4>
+<img src="UserCaseModel.PNG">
+<h4>
+    Use Case #1
+    <a class="shortcut" href="#Signup">(Sign up)</a>
+</h4>
+<p2>Author-Syed Faiyaz Kabir</p2>
+<br>
+<br>
+<p2>Purpose- To make a valid account for the user</p2>
+    <br>
+    <br>
+<p2>Requirements Traceability- Email Address and password</p2>
+    <br>
+    <br>
+<p2>Preconditions-Valid email address</p2>
+    <br>
+    <br>
+<p2>Post conditions-Creation of an account for the user</p2>
+    <br>
+    <br>
+<p2>Actors-User</p2>
+    <br>
+    <br>
+<p2>Flow of events</p2>
+    <br>
+    <br>
+<p2>Basic Flow - user gives correct email address</p2>
+    <br>
+    <br>
+<p2>Alternative Flow- Wrong email address will prompt the user to input the email address again</p2>
+    <br>
+    <br>
+    <p2><a class="shortcut" href="#SignupError">Exceptions</a>- if an account already exists the user will be prompted to input different email address</p2>
+    <h4>Use case #2 <a class="shortcut" href="#Login">(Login)</a></h4>
+<p2>Author-T.M Ishrak Hussain</p2>
+    <br>
+    <br>
+<p2>Purpose- Login into a valid account</p2>
+    <br>
+    <br>
+<p2>Requirements traceability- Email Address and password</p2>
+    <br>
+    <br>
+<p2>Preconditions - Valid User Account</p2>
+    <br>
+    <br>
+<p2>Post conditions- Log into the app</p2>
+    <br>
+    <br>
+<p2>Actors- User/Admin</p2>
+    <br>
+    <br>
+<p2>Flow of Event</p2>
+    <br>
+    <br>
+<p2>Basic Flow- User logs into the application and stars using it</p2>
+    <br>
+    <br>
+<p2>Alternative Flow- Wrong login credentials will prompt the user</p2>
+    <br>
+    <br>
+<p2><a class="shortcut" href="#LoginError">Exceptions</a>- if an account doesn't exist the application will show an error message and prompt the user to provide correct credentials</p2>
+    <br>
+    <br>
+    <h4>Use case #3(Database)</h4>
+    <br>
+    <br>
+<p2>Author-  Nobin Bokhtiar</p2>
+    <br>
+    <br>
+<p2>Purpose- To store user credentials and PC parts information</p2>
+    <br>
+    <br>
+<p2>Actors- Admin</p2>
+    <br>
+    <br>
+<p2>Flow of Events</p2>
+    <br>
+    <br>
+<p2>Basic Flow- Admin can make necessary changes in the database</p2>
+    <br>
+    <br>
+<h4>Use Case #4<a class="shortcut" href="#Home"> (Input Requirements)</a></h4>
+    <br>
+    <br>
+<p2>Author- T.M Ishrak Hussain</p2>
+    <br>
+    <br>
+<p2>Preconditions- Login into the application</p2>
+    <br>
+    <br>
+<p2>Post condition- User can start making their PC</p2>
+    <br>
+    <br>
+<p2>Actors- Users</p2>
+    <br>
+    <br>
+<p2>Flow of events</p2>
+    <br>
+    <br>
+<p2>Basic Flow- User gives correct manual or voice input</p2>
+    <br>
+    <br>
+<p2><a class="shortcut" href="#HomeError"></a> - wrong input via voice command will prompt the user to input again</p2>
+    <br>
+    <br>
+<h4>Use Case#5 <a class="shortcut" href="#Budget">(Input budget)</a></h4>
+    <br>
+    <br>
+<p2>Author- Syed Faiyaz Kabir</p2>
+    <br>
+    <br>
+<p2>Purpose- Getting user Budget</p2>
+    <br>
+    <br>
+<p2>Preconditions- User should put correct input in the input requirements</p2>
+    <br>
+    <br>
+<p2>Post Conditions- Creating a result for the user</p2>
+    <br>
+    <br>
+<p2>Actors- User</p2>
+    <br>
+    <br>
+<p2>Flow of Events</p2>
+    <br>
+    <br>
+<p2>Basic Flow- User inputs correct numerical value manually or via voice command </p2>
+    <br>
+    <br>
+    <p2><a class="shortcut" href="#BudgetError">Exception</a> - Wrong type of manual input or voice command will cause an error message prompting the user to input again </p2>
+    <br>
+    <br>
+<h4>Use Case #6 <a class="shortcut" href="#Result">(Result)</a></h4>
+    <br>
+    <br>
+<p2>Author- Syed Faiyaz Kabir</p2>
+    <br>
+    <br>
+<p2>Purpose- To show the user desired result for parts under users budget and according to user preference</p2>
+    <br>
+    <br>
+<p2>Preconditions- Input the budget correctly</p2>
+    <br>
+    <br>
+<p2>Post Conditions- Show the user results for their query</p2>
+    <br>
+    <br>
+<p2>Actors- Application</p2>
+    <br>
+    <br>
+<p2>Flow of Events</p2>
+    <br>
+    <br>
+<p2>Basic Flow- user will get results according to set preference</p2>
+    <br>
+    <br>
+<p2>Exception- wrong input by the user will show wrong results</p2>
+    <br>
+    <br>
+<br>
+<br>
+<h3>Other Non-Functional Requirements</h3>
+
+<h4 id="PR">4.1 &emsp;Performance Requirements</h4>
+<p2>The software should be able to take inputs via voice command correctly and output correct results within 1 second.</p2>
+    <br>
+    <br>
+<h4 id="SSR">4.2 &emsp;Safety and Security Requirements</h4>
+<p2>Safety and Security Requirements
+    Every time the user login into their account the application will ask for their login credentials. Wrong login credentials will display error every time a different person tries to mimic the user.
+</p2>
+    <br>
+    <br>
+<h4 id="SQA">4.3 &emsp;Software Quality Attributes</h4>
+<h4>Correctness </h4>
+<p2>
+    The application uses a robust algorithm which makes it over 90% correct in giving right results to the users. It gives users an edge while making their business decisions.
+</p2>
+<h4>Maintainability</h4>
+<p2>
+    Maintaining the software is easy and cheap since companies release parts not very often. It does not require much people to update the database and user credentials are automatically updated by the users. The API used in the applications are free and open-source which makes maintaining the software pretty cheap.
+</p2>
+
+
+
+</body>
+</head>
+
+
+</html>
