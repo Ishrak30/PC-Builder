@@ -1,0 +1,98 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: top;
+    font-family: sans-serif;
+    color:  #fff !important;
+}
+.main{
+
+    max-width: 1300px;
+    margin: auto;
+}
+.main ul{
+     
+    float: right;
+    list-style-type: none;
+    margin-top: 15px;
+    
+}
+.main ul li{
+
+    display: inline;
+
+}
+.main ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff ;
+    transition: 0.5s ease;
+
+}
+ul li a:hover
+{
+    background-color: #fff;
+    color: black;
+}
+.title{
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h2{
+
+    font-size: 40px;
+}
+.box{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #292929;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+.box:hover > .s-txt{
+
+    width: 240px;
+    padding: 0 6px;
+}
+.box:hover > .btn{
+
+    background: white;
+}
+.btn{
+
+    color: #e9c62c;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #504f4fda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.s-txt{
+
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}

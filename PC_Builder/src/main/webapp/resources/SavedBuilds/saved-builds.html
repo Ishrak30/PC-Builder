@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="saved-build.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="main">
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="congs">
+    <i class="fa fa-bookmark" aria-hidden="true"></i>
+  </div>
+    <div class="container">
+        <h3>Your Previous Saved Builds Using PC Builder are:</h3>
+         <table class="dark-table">
+            <tr>
+                <th>CPU</th>
+                <th>GPU</th>
+                <th>Motherboard</th>
+                <th>RAM</th>
+                <th>PSU</th>
+                <th>HDD</th>
+            </tr>
+
+            <!-- loop over and print our customers -->
+				<c:forEach var="pcparts" items="${SavedBuilds}">
+				
+					<tr>
+						<td>${pcparts.CPU}</td>
+						<td>${pcparts.GPU}</td>	
+						<td>${pcparts.MOBO}</td>
+						<td>${pcparts.RAM}</td>
+						<td>${pcparts.PSU}</td>
+						<td>${pcparts.HDD}</td>
+					</tr>
+				
+				</c:forEach>
+                  
+
+            </table>
+          
+    </div>
+
+    
+
+</body>
+</html>

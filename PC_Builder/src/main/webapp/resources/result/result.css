@@ -1,0 +1,156 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: top;
+    font-family: sans-serif;
+    color:  #fff !important;
+    
+}
+.main1{
+
+    max-width: 1300px;
+    margin: auto;
+}
+.main1 ul{
+     
+    float: left;
+    list-style-type: none;
+    margin-top: 15px;
+    
+}
+.main1 ul input{
+
+    background-color: darkkhaki;
+    text-size-adjust: inherit;
+    
+}
+
+.main1 ul input[type="submit"]
+{
+
+    color: black;
+    font-size: 13px ;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid #fff ;
+    transition: 0.5s ease;
+
+}
+ul input[type="submit"]:hover
+{
+    background-color: rgb(24, 21, 66);
+    color: rgb(238, 234, 234);
+}
+
+.main{
+
+    max-width: 1300px;
+    margin: auto;
+}
+.main ul{
+     
+    float: right;
+    list-style-type: none;
+    margin-top: 15px;
+    
+}
+.main ul li{
+
+    display: inline;
+
+}
+.main ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff ;
+    transition: 0.5s ease;
+
+}
+ul li a:hover
+{
+    background-color: #fff;
+    color: black;
+}
+
+
+.congs{
+ 
+    height: 20px;
+    width: 1350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.congs i{
+
+    height: 100px;
+    width: 100px;
+    background-color: rgb(8, 1, 49);
+    border-radius: 50px;
+    text-align: center;
+    margin: 50px;
+    line-height:110px;
+     
+}
+.congs i{
+
+    font-size: 50px;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.congs :hover i{
+    transform: scale(1.4);
+}
+.container{
+   
+    position: relative;
+    width: 1200px;
+    height: 50px;
+    margin: 60px auto;
+}
+table{
+
+    width: 50%;
+    margin: auto;
+    table-layout: fixed;
+    
+}
+h3{
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+table, th, td {
+    color: #fff;
+    border: 1px dotted white;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: sans-serif;
+}
+  th, td {
+    padding: 5px;  
+}
+th{
+    font-size: 18px;
+    padding: 17px;
+}
+td{
+    padding: 15px 18spx;
+    font-size: 18px;
+}
+
+.dark-table1{
+
+    color: #fff;
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: sans-serif; 
+    background-color: rgb(41, 40, 40);
+}
